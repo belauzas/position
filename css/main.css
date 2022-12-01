@@ -8,7 +8,7 @@ body * {
 
 body {
     display: grid;
-    grid-template-columns: 100px 1fr 1fr;
+    grid-template-columns: 100px 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     gap: 5vmin;
@@ -39,6 +39,9 @@ body {
 
 .float > * {
     float: left;
+}
+.flex {
+    display: flex;
 }
 
 .relative > .left {
