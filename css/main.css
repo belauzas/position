@@ -1,0 +1,67 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 5vmin;
+    padding: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+
+.container {
+    border: 1px solid;
+}
+
+.left {
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+}
+.center {
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+}
+.right {
+    width: 60px;
+    height: 60px;
+    background-color: tan;
+}
+
+.float > * {
+    float: left;
+}
+
+.relative > .left {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.relative > .right {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.absolute {
+    position: relative;
+}
+.absolute > .left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.absolute > .right {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
